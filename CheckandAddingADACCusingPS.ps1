@@ -1,8 +1,9 @@
 ﻿
+#Trial codes, first PS, feel free to contribute
 #Check The user 
-#$Name = 'asdas'
+#$Name = 'SomeAccountName'
 #$File = .\Testing
-$MachineName = "prtest3"
+$MachineName = "YourMachineName"
 $User = Get-ADUser -LDAPFilter "(sAMAccountName=($MachineName))"
 if ($User -ne $Null){
     
@@ -24,7 +25,7 @@ Else {
             $Sname = $MachineName
             $SAName = $MachineName
             $PUserName = $MachineName 
-            #$Encrypasswd = ('Abcd@123456789')
+            #$Encrypasswd = ('PasswordHere')
             #$DecryPasswd = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($Encrypasswd))
 
             "Using GivenName:" 
